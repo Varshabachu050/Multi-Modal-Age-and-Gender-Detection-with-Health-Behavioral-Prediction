@@ -87,7 +87,7 @@ Multi_Model_Age_Gender_Classification/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/varshabachu050/Multi_Model_Age_Gender_Classification.git
+git clone https://github.com/Varshabachu050/Multi-Modal-Age-and-Gender-Detection-with-Health-Behavioral-Prediction.git
 cd Multi_Model_Age_Gender_Classification
 ```
 
