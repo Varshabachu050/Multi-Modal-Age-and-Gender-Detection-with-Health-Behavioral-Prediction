@@ -1,6 +1,6 @@
 #  Multi-Modal Age & Gender Detection with Health & Behavioral Prediction
 
-This is an AI-based facial analysis project that detects **Age, Gender, Emotion, Skin Type, and Behaviour** from a face.
+ **This is an AI-based facial analysis project that detects **Age, Gender, Emotion, Skin Type, and Behaviour** from a face**.
 ---
 
 ##  Live Demo
