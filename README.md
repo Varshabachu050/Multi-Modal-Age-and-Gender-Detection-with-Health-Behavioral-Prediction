@@ -134,7 +134,6 @@ Run:
 ```bash
 python main.py
 ```
-The application will start
 ---
 ## 👨‍💻 Author
 
