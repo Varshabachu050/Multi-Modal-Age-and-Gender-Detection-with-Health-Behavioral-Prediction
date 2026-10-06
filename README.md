@@ -1,172 +1,142 @@
-# 🧠 Multi-Model Age & Gender Classification with Healthcare and Behavioral Prediction
+#  Multi-Modal Age & Gender Detection with Health & Behavioral Prediction
 
-A real-time AI-powered facial analysis system that captures a user's face through a webcam and predicts **Age**, **Gender**, **Emotion**, and **Skin Type**, while providing personalized **Healthcare**, **Skincare**, and **Behavioral Recommendations**.
+This is an AI-based facial analysis project that detects **Age, Gender, Emotion, Skin Type, and Behaviour** from a face.
+---
 
-This project combines Computer Vision and Deep Learning techniques using **Python**, **OpenCV**, **DeepFace**, and **NumPy** to deliver intelligent insights from facial features in real time.
+##  Live Demo
+
+https://multi-modal-age-and-gender-detection-0z0h.onrender.com
 
 ---
 
-## 🚀 Features
+##  Features
 
-* 📷 Real-Time Face Detection using Webcam
-* 🧠 Age Estimation
-* 🚻 Gender Classification
-* 😊 Emotion Detection
-* 🧴 Skin Type Analysis
+*  Capture an image using the webcam
+*  Upload an image from the device
+*  Age prediction
+*  Gender prediction
+*  Emotion detection
+*  Skin type estimation
+*  Behaviour prediction
+*  Personalized suggestions
+*  Face detection with bounding box
 
-  * Dry Skin
-  * Oily Skin
-  * Normal Skin
-  * Combination Skin
-* 💡 Personalized Healthcare Recommendations
-* 🌟 Skincare Suggestions Based on Skin Type
-* 📊 Behavioral Insights Based on Emotion Analysis
+### Skin Types
 
----
+The application gives an approximate skin type:
 
-## 🛠️ Technologies Used
+* Dry
+* Oily
+* Normal
+* Combination
 
-* Python 3.x
-* OpenCV
-* DeepFace
-* NumPy
+### Emotions
 
----
+The emotion model can detect:
 
-## 🧠 How It Works
-
-### 1. Face Capture
-
-* Accesses the webcam feed.
-* Detects the largest face using OpenCV.
-* Displays a live video stream with a face bounding box.
-
-### 2. Facial Analysis
-
-* Captures the detected face image.
-* Uses DeepFace to analyze:
-
-  * Age
-  * Gender
-  * Emotion
-
-### 3. Skin Type Detection
-
-* Converts the facial image to HSV color space.
-* Evaluates brightness and saturation levels.
-* Classifies skin type as:
-
-  * Dry
-  * Oily
-  * Normal
-  * Combination
-
-### 4. Recommendation Engine
-
-Generates personalized suggestions based on:
-
-* Detected age group
-* Emotional state
-* Skin type characteristics
+* Neutral
+* Happy
+* Surprise
+* Sad
+* Angry
+* Disgust
+* Fear
+* Contempt
 
 ---
 
-## 📁 Project Structure
+##  Technologies Used
+
+* **Python**
+* **Flask**
+* **OpenCV**
+* **InsightFace**
+* **ONNX Runtime**
+* **NumPy**
+* **HTML**
+* **CSS**
+* **JavaScript**
+* **Gunicorn**
+* **Render**
+
+---
+
+## Project Workflow
 
 ```text
-Multi_Model_Age_Gender_Classification/
-│
-├── main.py
-└── README.md
+Webcam / Upload Image
+          ↓
+     Image Processing
+          ↓
+     Face Detection
+          ↓
+   ┌──────┴───────┐
+   ↓              ↓
+Age & Gender    Emotion
+   ↓              ↓
+   └──────┬───────┘
+          ↓
+     Skin Type
+          ↓
+      Behaviour
+          ↓
+   Suggestions
+          ↓
+    Display Results
 ```
 
 ---
-
 ## ⚙️ Installation
 
-### Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Varshabachu050/Multi-Modal-Age-and-Gender-Detection-with-Health-Behavioral-Prediction.git
-cd Multi_Model_Age_Gender_Classification
 ```
 
-### Install Required Dependencies
+### 2. Open the Project Folder
 
 ```bash
-pip install opencv-python numpy deepface
+cd Multi-Modal-Age-and-Gender-Detection-with-Health-Behavioral-Prediction
+```
+
+### 3. Create Virtual Environment
+
+```bash
+python3 -m venv .venv
+```
+
+### 4. Activate Virtual Environment
+
+For macOS/Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+For Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+### 5. Install Packages
+
+```bash
+pip install -r requirements.txt
 ```
 
 ---
 
-## ▶️ Run the Project
+## Run the Project
+
+Run:
 
 ```bash
 python main.py
 ```
-
-### Controls
-
-* Press **Q** to capture the detected face.
-* The system will generate age, gender, emotion, and skin-type predictions along with recommendations.
-
+The application will start
 ---
-
-## 📋 Dependencies
-
-```text
-Python 3.x
-OpenCV
-NumPy
-DeepFace
-```
-
----
-
-## 📊 Sample Output
-
-```text
-Age: 25
-
-Gender: Male
-
-Emotion: Happy
-
-Skin Type: Normal
-```
-
-### 💡 Recommendations
-
-```text
-✓ Maintain a balanced skincare routine
-✓ Stay hydrated throughout the day
-✓ Use a lightweight moisturizer
-✓ Continue positive lifestyle habits
-```
-
----
-
-## 🎯 Applications
-
-* Personalized Healthcare Assistance
-* AI-Based Skincare Recommendation Systems
-* Emotion and Behavioral Monitoring
-* Human-Computer Interaction Research
-* Educational AI and Computer Vision Projects
-* Smart Wellness and Self-Care Applications
-
----
-
-## 🛡️ Security & Ethical Considerations
-
-* Webcam access is used only during application execution.
-* No facial images are permanently stored.
-* User privacy should always be respected.
-* Obtain user consent before collecting or processing facial data.
-* This project is intended for educational and research purposes.
-
----
-
 ## 👨‍💻 Author
 
-**Varsha Bachu**
+**Bachu Varsha**
